@@ -1,4 +1,4 @@
-# @loopback/example-express-composition
+# loopback4-express-with-logging
 
 This is an example of integrating Winston & Morgan Logging with Loopback 4.
 It uses the express-composition example that mounts the LoopBack 4 REST API on a simple
