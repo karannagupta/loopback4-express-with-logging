@@ -4,6 +4,8 @@ This is an example of integrating Winston & Morgan Logging with Loopback 4.
 It uses the express-composition example that mounts the LoopBack 4 REST API on a simple
 [Express](https://expressjs.com) application. See here for the [express-composition example](https://github.com/strongloop/loopback-next/tree/master/examples/express-composition).
 
+The Express application in this example is based on the [Express Generator](https://expressjs.com/en/starter/generator.html)
+
 ## Loopback 4 Express-Composition Setup
 
 You'll need to install the LoopBack 4 CLI toolkit to scaffold your own application:
@@ -65,6 +67,10 @@ You can use the /errorlogger endpoint to log an error from your front end applic
     ```sh
     curl -X POST "http://127.0.0.1:8000/api/errorlogger" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"message\":\"My awesome error message\"}"
     ```
+
+## Log Files
+
+Log files are separated out based on the log levels. The `logs` directory is generated at run time.
 
 ## Docker
 
