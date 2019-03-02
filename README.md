@@ -12,11 +12,10 @@ You'll need to install the LoopBack 4 CLI toolkit to scaffold your own applicati
 npm i -g @loopback/cli
 ```
 
-## Tutorial
+## Express-Composition Tutorial
 
-Once you're ready to start, you can begin by visiting the
-[tutorial](http://loopback.io/doc/en/lb4/express-with-lb4-rest-tutorial.html)
-page.
+You can begin by visiting the official
+[tutorial page](http://loopback.io/doc/en/lb4/express-with-lb4-rest-tutorial.html) for mounting Loopback 4 in Express.
 
 ## Try out this example
 
