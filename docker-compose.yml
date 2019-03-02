@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+    ######################################
+    #   Setup the expresslb4 container
+    ######################################
+    expresslb4:
+        image: expresslb4:latest
+        build:
+            context: .
+        environment:
+            NODE_ENV: production

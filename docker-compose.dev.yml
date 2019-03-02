@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+    ######################################
+    #   Setup the expresslb4 api container
+    ######################################
+    expresslb4:
+        image: expresslb4:latest
+        ports:
+            - "8000:8000"
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        environment:
+            NODE_ENV: development
