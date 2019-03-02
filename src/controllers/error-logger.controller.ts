@@ -30,7 +30,6 @@ export class ErrorLoggerController {
     error: ErrorLogger
   ): Promise<Object> {
     // log the error to the transport.
-    console.log("Error", error.message);
     logger.log(
       "error",
       "%s - %s - %s - %s",

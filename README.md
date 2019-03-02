@@ -50,23 +50,23 @@ works.
 
 ## Winston Logging Example
 
-    ```node
-    import { winstonLogger } from "./lib/logger";
-    // log the error.
-      winstonLogger.error(
-        `${err.status || 500} - ${err.message} - ${req.originalUrl} - ${
-          req.method
-        } - ${req.ip}`
-      );
-      ```
+```javascript
+import { winstonLogger } from "./lib/logger";
+// log the error.
+winstonLogger.error(
+  `${err.status || 500} - ${err.message} - ${req.originalUrl} - ${
+    req.method
+  } - ${req.ip}`
+);
+```
 
 ## Winston Logging Endpoint Example
 
 You can use the /errorlogger endpoint to log an error from your front end application as well -
 
-    ```sh
-    curl -X POST "http://127.0.0.1:8000/api/errorlogger" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"message\":\"My awesome error message\"}"
-    ```
+```sh
+curl -X POST "http://127.0.0.1:8000/api/errorlogger" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"message\":\"My awesome error message\"}"
+```
 
 ## Log Files
 
@@ -74,7 +74,17 @@ Log files are separated out based on the log levels. The `logs` directory is gen
 
 ## Docker
 
-Application works with Docker. Use the docker-compose to create your Docker container.
+Application works with Docker. Use the `docker-compose` to create your Docker container.
+
+## Screenshots
+
+#### 1. Log Files
+
+![Log Files](https://karannagupta.com/kg/wp-content/uploads/2019/03/error-log.png "Access log files from the logs directory")
+
+#### 2. Error Logger endpoint - /api/errorlogger - POST
+
+![errorlogger endpoint](https://karannagupta.com/kg/wp-content/uploads/2019/03/lb4-post-example.png "The errorlogger POST endpoint")
 
 ## License
 
