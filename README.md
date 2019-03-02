@@ -6,8 +6,6 @@ It uses the express-composition example that mounts the LoopBack 4 REST API on a
 
 The Express application in this example is based on the [Express Generator](https://expressjs.com/en/starter/generator.html)
 
-## Loopback 4 Express-Composition Setup
-
 You'll need to install the LoopBack 4 CLI toolkit to scaffold your own application:
 
 ```sh
@@ -20,14 +18,12 @@ Once you're ready to start, you can begin by visiting the
 [tutorial](http://loopback.io/doc/en/lb4/express-with-lb4-rest-tutorial.html)
 page.
 
-## Try it out this example
+## Try out this example
 
 If you'd like to see the final results of this tutorial as an example
 application, follow these steps:
 
-### Generate the example using CLI
-
-1. Download/Clone this example.
+1. Download/Clone this project.
 2. Jump into the directory and then install the required dependencies:
 
    ```sh
