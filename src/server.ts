@@ -25,10 +25,12 @@ export class ExpressServer {
   private app: express.Application;
   public readonly lbApp: Lb4Application;
   private server: http.Server;
+  private options: ApplicationConfig
 
   constructor(options: ApplicationConfig = {}) {
     this.app = express();
     this.lbApp = new Lb4Application(options);
+    this.options = options
 
     // enable cross-origin-resource-sharing.
     this.app.use(cors());
@@ -89,7 +91,7 @@ export class ExpressServer {
   }
 
   public async start() {
-    this.server = this.app.listen(8000);
+    this.server = this.app.listen(this.options.rest.port);
     await pEvent(this.server, "listening");
   }
 
