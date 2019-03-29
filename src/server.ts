@@ -49,10 +49,10 @@ export class ExpressServer {
     this.app.use(urlencoded({ extended: false }));
     this.app.use(cookieParser());
 
-    // loopback api will be mounted at /app/api
+    // loopback api will be mounted at /api
     this.lbApp.basePath("/");
 
-    // Expose the Loopback API on the /app route.
+    // Expose the Loopback API on the /api route.
     this.app.use("/api", this.lbApp.requestHandler);
 
     // Custom Express routes
